@@ -1,5 +1,5 @@
 function login(){
-    alert("Inicio de sesión exitoso");
+    alert("inicio de sesión exitosa");
 }
 
 function reporte(){
