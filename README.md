@@ -41,13 +41,27 @@ Act-4--sistemas-de-control-de-versiones/
 │
 ├── README.md
 ├── HistoriasUsuario.pdf
-│
-└── Index/
+├── package.json
+├── .gitignore
+├── backend/
+│   └── server.js
+└── frontend/
+    ├── index.html
     ├── css/
-    │   └── estilos.css
-    │
-    ├── html/
-    │   └── index.html
-    │
-    └── scrip/
-        └── app.js
+    │   └── styles.css
+    ├── js/
+    │   ├── app.js
+    │   └── views.js
+    └── views/
+        ├── login.html
+        ├── app.html
+        ├── citas.html
+        ├── historia.html
+        └── reportes.html
+```
+
+## Cómo ejecutar
+
+1. Abrir una terminal en el directorio del proyecto.
+2. Ejecutar `npm start`.
+3. Abrir `http://localhost:3000` en el navegador.
