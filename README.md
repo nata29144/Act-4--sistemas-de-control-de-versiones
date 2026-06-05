@@ -44,6 +44,16 @@ Act-4--sistemas-de-control-de-versiones/
 ├── package.json
 ├── .gitignore
 ├── backend/
+│   ├── controllers/
+│   │   ├── authController.js
+│   │   └── appointmentController.js
+│   ├── models/
+│   │   ├── userModel.js
+│   │   └── appointmentModel.js
+│   ├── services/
+│   │   ├── authService.js
+│   │   ├── appointmentService.js
+│   │   └── reportService.js
 │   └── server.js
 └── frontend/
     ├── index.html

@@ -1,6 +1,13 @@
 const http = require('http');
 const fs = require('fs');
 const path = require('path');
+const authController = require('./controllers/authController');
+const appointmentController = require('./controllers/appointmentController');
+const userModel = require('./models/userModel');
+const appointmentModel = require('./models/appointmentModel');
+const authService = require('./services/authService');
+const appointmentService = require('./services/appointmentService');
+const reportService = require('./services/reportService');
 
 const frontendRoot = path.join(__dirname, '..', 'frontend');
 const port = process.env.PORT || 3000;
