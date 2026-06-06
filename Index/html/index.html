@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>ClinicOS</title>
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body>
 
@@ -12,20 +12,21 @@
     <section>
         <h2>Inicio de Sesión</h2>
 
-        <input type="text" placeholder="Usuario">
-        <input type="password" placeholder="Contraseña">
+        <input type="text" id="usuario" placeholder="Usuario">
+        <input type="password" id="password" placeholder="Contraseña">
         <button onclick="login()">Ingresar</button>
     </section>
 
-    <section>
+    <section id="seccionCitas">
         <h2>Gestión de Citas</h2>
 
-        <input type="text" placeholder="Nombre paciente">
-        <input type="date">
-        <button>Agendar cita</button>
+        <input type="text" id="nombrePaciente" placeholder="Nombre paciente">
+        <input type="date" id="fechaCita">
+        <button onclick="agendarCita()">Agendar cita</button>
+        <ul id="listaCitas"></ul>
     </section>
 
-    <section>
+    <section id="seccionHistoria">
         <h2>Historia Clínica</h2>
 
         <p>Paciente: Juan Pérez</p>
@@ -38,7 +39,7 @@
         <button onclick="reporte()">Generar reporte</button>
     </section>
 
-    <script src="js/app.js"></script>
+    <script src="../scrip/app.js"></script>
 
 </body>
 </html>
